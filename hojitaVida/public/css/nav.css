@@ -1,0 +1,20 @@
+.in{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 4em;
+    background-color: black;
+    width: 100%;
+}
+.na{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 150%;
+    border: 1px solid white;
+    height: 3em;
+    width: 100%;
+}

@@ -5,17 +5,19 @@ const port = 3002;
 
 server.set('view engine', 'ejs');
 server.use(express.static(__dirname + '/public'));
+
 server.set('views', __dirname + '/views');
 
 
 
-server.get('/',(req, res)=>{
-    res.render('index',{titulo:"Pagina Home cargada por render"});
-});
-
 server.listen(port, ()=>{
     console.log(`servidor iniciado en puerto ${port}`)
 })
+
+//Rutas web
+server.use('/rost', require('./router/Rutas'));
+
+
 
 /*error */
 server.use((req , res, next)=>{

@@ -5,25 +5,6 @@
     z-index: 1;
 
 }
-.in{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    height: 4em;
-    background-color: black;
-    
-}
-.na{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    font-size: 150%;
-    border: 1px solid white;
-    height: 3em;
-    width: 25%;
-}
 .ban{
     display: flex;
     justify-content: space-around;
@@ -75,7 +56,7 @@
 
 .about{
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -86,7 +67,7 @@
 }
 .about_show{
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -137,7 +118,7 @@
 /*Habilidades blandas*/
 .ge{
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -148,7 +129,7 @@
 }
 .ge_show{
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -158,10 +139,10 @@
     background-color: rgb(238, 242, 246);
 }
 
-.mi{
+/*.mi{
     margin: auto;
     margin-top: 15%;
-    
+    gap: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -183,13 +164,42 @@
 }
 i{
     height: 3em;
+}*/
+.card{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
+.mi{
+    margin-top: 10%;
+    display: flex; 
+   justify-content: space-around;
+   gap: 60px;
+    align-items: center;
+    width: 80%;
+}
+.tr{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    font-size: 160%;
+}
+.tr i{
+    padding-bottom: 6%;
+    font-size: 300%;
+}.tr h4{
+    padding-bottom: 6%; 
+}
+
 
 /*contactos*/
 
 .contac{
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -200,7 +210,7 @@ i{
 }
 .contac_show{
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -219,7 +229,7 @@ flex-direction: column;
 }
 .personal i{
     display: flex;
-    font-size: 200%;
+    font-size: 270%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -234,7 +244,7 @@ flex-direction: column;
         flex-direction: column;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   /*Habilidades blandas*/
   .mi{
     margin: auto;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
     <title>HV</title>
 </head>
@@ -13,20 +13,16 @@
     <section class="contenedor_family" id="contenedor_family">
     <div class="navv">
         <nav class="in" id="in">
-            <p class="na" id="inicio">Inicio</p>
-            <p class="na" id="sobre" >Sobre mí</p>
-            <p class="na" id="habili">Habilidades</p>
-            <p class="na" id="contacto">Contactos</p>
-        </nav>
-
+        <%-include ('templates/nav'); %>
+    </nav>
         <div class="ban" id="ban">
             <div class="cont">
-                <h2>Juan David Celis Venegas</h2>
+                <h2><%=titulo %></h2>
                 <h1>PROGRAMADOR</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis quam repellendus culpa exercitationem nemo illum nesciunt repudiandae, assumenda sunt rem facilis quasi at eius itaque ut suscipit, sint pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore pariatur voluptatem eos assumenda nemo consequatur quis, eligendi placeat totam corporis exercitationem iste tenetur sed expedita id beatae ipsum nesciunt!</p>
             </div>
             <div class="ima">
-                <img class="fot" src="img/foto.jpeg" alt="">
+                <img class="fot" src="/img/foto.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -34,7 +30,7 @@
         <!-- About me -->
     <div class="about" id="about">    
         <div class="titu">
-            <h1 class="sob">Sobre mi</h1>
+            <h1 class="sob"> Sobre mí </h1>
             <p class="sob1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id voluptate magnam corporis.</p>
         </div>
     
@@ -77,24 +73,33 @@
                 <h1 class="sob">hablididades blandas</h1>
                 <p class="sob1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id voluptate magnam corporis.</p>
             </div>
+            <div class="card" id="card">
+                <div class="mi">
+                    <div class="tr">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>Puntual.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
+                    </div>
 
-            <div class="mi">
-                <i class="fa-duotone fa-business-time"></i>
-                <p>Puntual</p>
-                
+                    <div class="tr">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>Buen manejo sobre el lenguaje.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
+                    </div>
 
-                <i class="fa-brands fa-node"></i>
-                <p>Buen manejo sobre el lenguaje</p>
+                    <div class="tr">
+                        <i class="fa-solid fa-brain"></i>
+                        <h4>Buena capacidad de aprendizaje.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
+                    </div>
 
-                <i class="fa-regular fa-brain-circuit"></i>
-                <p>Buena capacidad de aprendizaje</p>
-            </div>
-            <div class="mi2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
+                    <div class="tr">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h4>Amigable, social y educado.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
+                    </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, illum minima consequuntur placeat incidunt dolore laborum</p>
+                </div>
             </div>
         </div>
         
@@ -111,6 +116,6 @@
         
         
     </section>
- <script src="js/modales.js"></script>
+ <script src="/js/modales.js"></script>
 </body>
 </html>
