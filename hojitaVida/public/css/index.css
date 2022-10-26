@@ -6,6 +6,7 @@
 
 }
 .ban{
+    position: fixed;
     display: flex;
     justify-content: space-around;
     height: 92vh;
@@ -13,6 +14,7 @@
     background-color: rgb(238, 242, 246);
 }
 .ban_show{
+    position: fixed;
     display: flex;
     justify-content: space-around;
     height: 92vh;
@@ -73,7 +75,7 @@
     bottom: 0%;
     opacity: 1;
     pointer-events: unset;
-    height: 92vh;
+    height: 100vh;
     background-color: rgb(238, 242, 246);
 }
 
@@ -168,15 +170,17 @@ i{
 .card{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
+    height: 70vh;
 }
 .mi{
-    margin-top: 10%;
-    display: flex; 
-   justify-content: space-around;
-   gap: 60px;
-    align-items: center;
-    width: 80%;
+       /* margin-top: 10%; */
+       display: flex;
+       /* justify-content: space-around; */
+       gap: 60px;
+       /* align-items: center; */
+       width: 80%;
 }
 .tr{
     text-align: justify;
@@ -244,26 +248,306 @@ flex-direction: column;
         flex-direction: column;
 }
 
-@media screen and (max-width: 1000px) {
-  /*Habilidades blandas*/
-  .mi{
-    margin: auto;
-    margin-top: 15%;
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    /*Incio */
     
+
+    .fot {
+        height: 80%;
+        border-radius: 150px;
+        border: 2px solid black;
+    }
+    .ima {
+        margin-right: 2%; 
+    }
+
+   /* Sobre mí */
+   .conte{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.mi2{
-    margin: auto;
-    margin-top: 3%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    
-} 
+    margin-top: 4%;
+    background-color: rgb(238, 242, 246);
 }
 
+.titu{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.titu p{
+    font-size: 160%;
+}
+
+.izq p, .de p, .de b{
+    width: 95%;
+    font-size: 130%;
+}
+.izq ul{
+    font-size: 130%;
+}
+.izq li{
+    margin-top: 2%;
+}
+.cono{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.cono b{
+    margin-top: 7%;
+}
+  /*Habilidades blandas*/
+.mi{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    
+
+}
+.tr{
+    text-align: justify;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    width: 40%;
+    /* height: 13em; */
+    font-size: 140%;
+}
+.tr i{
+    padding-bottom: 6%;
+    font-size: 300%;
+}.tr h4{
+    padding-bottom: 6%; 
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 899px){
+    
+    /*Inicio*/
+    .ban_show{
+        flex-direction: column;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    height: 185vh;
+    width: 100%;
+    opacity: 1;
+    background-color: rgb(238, 242, 246);
+    }
+    .fot {
+        height: 55%;
+        border-radius: 150px;
+        border: 2px solid black;
+    }
+    .ima{
+        margin-right: 0%;
+        margin-top: 2%;
+        margin-bottom: -2%;
+    }
+    .ima img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    /*Sobre mí*/
+    .about_show{
+        position: fixed;
+        top: 5.5%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+    .conte{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+        height: 55em;
+        background-color: rgb(238, 242, 246);
+    }
+    .titu p {
+    font-size: 200%;
+}
+
+    /*Habilidades*/
+    .ge_show{
+        position: fixed;
+        top: 5.5%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+    .card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 105vh;
+    }
+    .mi{
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        width: 80%;
+    }
+
+    .tr{
+        text-align: justify;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: row; */
+        width: 40%;
+        /* height: 13em; */
+        font-size: 180%;
+    }
+
+    /*Contactos*/
+    .contac_show{
+        position: fixed;
+        top: 5.5%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+    
+    .personal i{
+        display: flex;
+        font-size: 340%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 35vh;
+        }
+    .personal p{
+        margin-top: -5%;
+            display: flex;
+            font-size: 250%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 499px) {
+    
+
+
+    /*Sobre mí*/
+    .about_show{
+        position: fixed;
+        top: 7.3%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+    .conte{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+        height: 55em;
+        background-color: rgb(238, 242, 246);
+    }
+    .titu p {
+    font-size: 100%;
+}.izq h2 {
+    font-size: 150%;
+}.izq p{
+    width: 90%;
+    font-size: 120%;
+}.izq{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+
+    /*Habilidades*/
+
+    .titu h1 {
+        font-size: 200%;
+    }
+    .titu p {
+        font-size: 120%;
+    }
+    .ge_show{
+        position: fixed;
+        top: 7.3%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+    .card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+    .mi{
+        display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    }
+
+    .tr{
+        text-align: justify;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: row; */
+        width: 45%;
+        /* height: 13em; */
+        font-size: 120%;
+    }
+
+    /*Contactos*/
+    .contac_show{
+        position: fixed;
+        top: 7.3%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+}

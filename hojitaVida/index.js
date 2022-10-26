@@ -23,3 +23,5 @@ server.use('/rost', require('./router/Rutas'));
 server.use((req , res, next)=>{
     res.status(404).sendFile(__dirname + '/public/404.html')
 })
+
+
