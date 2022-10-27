@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+    background-color: rgb(238, 242, 246);
 }
 .navv{
     z-index: 1;
@@ -457,6 +458,35 @@ flex-direction: column;
 @media screen and (min-width: 350px) and (max-width: 499px) {
     
 
+    /*Inicio*/
+    .ban_show{
+        flex-direction: column;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    height: 185vh;
+    width: 100%;
+    opacity: 1;
+    background-color: rgb(238, 242, 246);
+    }.cont{
+        font-size: 70%;
+    }
+    .fot {
+        height: 35%;
+        border-radius: 100px;
+        border: 2px solid black;
+    }
+    .ima{
+        margin-right: 0%;
+        margin-top: 2%;
+        margin-bottom: -2%;
+    }
+    .ima img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 
     /*Sobre mí*/
     .about_show{
@@ -474,21 +504,31 @@ flex-direction: column;
         display: flex;
         justify-content: space-around;
         margin-top: 1%;
-        height: 55em;
+        height: 43em;
         background-color: rgb(238, 242, 246);
     }
     .titu p {
     font-size: 100%;
 }.izq h2 {
-    font-size: 150%;
-}.izq p{
-    width: 90%;
     font-size: 120%;
+}.izq p{
+    width: 98%;
+    font-size: 110%;
 }.izq{
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+}
+.izq ul {
+    font-size: 106%;
+    margin-left: -7%;
+}.poi{
+     font-size: 70%;
+     margin-top: 25px;
+}
+.cono {
+    font-size: 70%;
 }
 
 
@@ -550,4 +590,165 @@ flex-direction: column;
         height: 185vh;
         background-color: rgb(238, 242, 246);
     }
+}
+
+@media screen and (min-width: 300px) and (max-width: 349px){
+    /*Inicio*/
+    .ban_show{
+        flex-direction: column;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    height: 185vh;
+    width: 100%;
+    opacity: 1;
+    background-color: rgb(238, 242, 246);
+    }.cont{
+        font-size: 70%;
+    }
+    .fot {
+        height: 28%;
+        border-radius: 100px;
+        border: 2px solid black;
+    }
+    .ima{
+        margin-right: 0%;
+        margin-top: 2%;
+        margin-bottom: -25%;
+    }
+    .ima img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    /*Sobre mí*/
+    .about_show{
+        position: fixed;
+        top: 7.3%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        opacity: 1;
+        pointer-events: unset;
+        height: 185vh;
+        background-color: rgb(238, 242, 246);
+    }
+    .titu{
+        margin-bottom: 5%;  
+    }
+    .conte{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1%;
+        height: 42.5em;
+        background-color: rgb(238, 242, 246);
+    }
+    .titu p {
+    font-size: 100%;
+}.izq h2 {
+    font-size: 120%;
+}.izq p{
+    width: 98%;
+    font-size: 105%;
+}.izq{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.izq ul {
+    font-size: 105%;
+    margin-left: -7%;
+}.poi{
+     font-size: 65%;
+     margin-top: 25px;
+}
+.cono {
+    font-size: 70%;
+}
+
+/*Habilidades*/
+
+.titu h1 {
+    font-size: 200%;
+}
+.titu p {
+    font-size: 120%;
+}
+.ge_show{
+    position: fixed;
+    top: 7.3%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 1;
+    pointer-events: unset;
+    height: 185vh;
+    background-color: rgb(238, 242, 246);
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+.mi{
+    display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 30px;
+align-items: center;
+width: 100%;
+}
+
+.tr{
+    text-align: justify;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    width: 45%;
+    /* height: 13em; */
+    font-size: 120%;
+}
+
+/*Contactos*/
+.contac_show{
+    position: fixed;
+    top: 7.3%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 1;
+    pointer-events: unset;
+    height: 185vh;
+    background-color: rgb(238, 242, 246);
+}
+.personal p {
+    /* margin-top: -5%; */
+    display: flex;
+    font-size: 145%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.personal i {
+    display: flex;
+    font-size: 300%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 23vh;
+}
+.personal h1 {
+    margin-top: 5%;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 }

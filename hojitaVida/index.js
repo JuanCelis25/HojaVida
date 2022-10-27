@@ -15,7 +15,13 @@ server.listen(port, ()=>{
 })
 
 //Rutas web
-server.use('/rost', require('./router/Rutas'));
+server.use('/', require('./router/Rutas'));
+
+server.use('/PG1', require('./router/Rutas'));
+
+server.use('/PG2', require('./router/Rutas'));
+
+server.use('/PG3', require('./router/Rutas'));
 
 
 
